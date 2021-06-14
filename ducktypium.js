@@ -20,8 +20,7 @@ class Ducktypium {
     }
     
     calibrate(array) {
-        array.sort().map(item => item * 3);
-        array.forEach(item => this.calibrationSequence.push(item));
+        array.sort().forEach(item => this.calibrationSequence.push(item * 3));
     }
 
 }
